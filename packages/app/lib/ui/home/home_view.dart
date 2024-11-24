@@ -1,3 +1,4 @@
+import 'package:base_ui/custom_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 
@@ -17,6 +18,7 @@ class HomeView extends HookWidget {
             Text(
               'You have pushed the button this many times:',
             ),
+            CustomButton(),
           ],
         ),
       ),
