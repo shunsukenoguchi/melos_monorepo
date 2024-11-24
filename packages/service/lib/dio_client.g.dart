@@ -22,15 +22,9 @@ class _DioClient implements DioClient {
   final ParseErrorLogger? errorLogger;
 
   @override
-  Future<PokemonResponse> getPokemonAll({
-    int offset = 0,
-    int limit = 20,
-  }) async {
+  Future<PokemonResponse> getPokemonAll() async {
     final _extra = <String, dynamic>{};
-    final queryParameters = <String, dynamic>{
-      r'offset': offset,
-      r'limit': limit,
-    };
+    final queryParameters = <String, dynamic>{};
     final _headers = <String, dynamic>{};
     const Map<String, dynamic>? _data = null;
     final _options = _setStreamType<PokemonResponse>(Options(

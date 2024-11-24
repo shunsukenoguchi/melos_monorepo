@@ -1,17 +1,17 @@
 import 'package:repository/domain_models/pokemon_dto.dart';
 import 'package:repository/domain_models/repository_result.dart';
-import 'package:riverpod_annotation/riverpod_annotation.dart';
+import 'package:riverpod/riverpod.dart';
 import 'package:service/dio_client.dart';
 import 'package:service/http_client.dart';
 
-part 'pokemon_repository.g.dart';
+final pokemonRepositoryProvider = Provider<PokemonRepository>((ref) {
+  return PokemonRepository(ref);
+});
 
-@riverpod
-class PokemonRepository extends _$PokemonRepository {
-  @override
-  PokemonRepository build() {
-    return PokemonRepository();
-  }
+class PokemonRepository {
+  final Ref ref;
+
+  PokemonRepository(this.ref);
 
   // ポケモンリストを取得するメソッド
   Future<RepositoryResult<PokemonDto>> fetchPokemonList() async {

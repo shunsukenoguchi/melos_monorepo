@@ -7,14 +7,6 @@ import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'dio_client.g.dart';
 
-// @riverpod
-// Dio dioClient(Ref ref) {
-//   return Dio(BaseOptions(
-//     baseUrl: 'https://pokeapi.co/api/v2',
-//     contentType: 'application/json',
-//   ));
-// }
-
 final dioClientProvider =
     Provider<DioClient>((ref) => DioClient(Dio(BaseOptions(
           baseUrl: 'https://pokeapi.co/api/v2',
@@ -26,8 +18,5 @@ abstract class DioClient {
   factory DioClient(Dio dio) = _DioClient;
 
   @GET("/pokemon")
-  Future<PokemonResponse> getPokemonAll({
-    @Query('offset') int offset = 0,
-    @Query('limit') int limit = 20,
-  });
+  Future<PokemonResponse> getPokemonAll();
 }
