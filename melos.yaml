@@ -1,0 +1,9 @@
+name: melos_repostiory_sample5
+
+packages:
+  - apps/**
+  - packages/**
+
+scripts:
+  analyze:
+    exec: dart analyze .
