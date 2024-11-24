@@ -12,6 +12,8 @@ dependencies:
   flutter_hooks: ^0.20.5
   base_ui:
     path: ../base_ui
+  repository:
+    path: ../repository
 
 dev_dependencies:
   flutter_test:

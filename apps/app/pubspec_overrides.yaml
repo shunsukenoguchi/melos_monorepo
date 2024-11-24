@@ -1,6 +1,10 @@
-# melos_managed_dependency_overrides: app,base_ui
+# melos_managed_dependency_overrides: app,base_ui,repository,service
 dependency_overrides:
   app:
     path: ../../packages/app
   base_ui:
     path: ../../packages/base_ui
+  repository:
+    path: ../../packages/repository
+  service:
+    path: ../../packages/service
