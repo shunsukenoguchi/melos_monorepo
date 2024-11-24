@@ -9,7 +9,7 @@ class PokemonResponse with _$PokemonResponse {
     required int count,
     String? next,
     String? previous,
-    required List<Pokemon> results,
+    required List<PokemonApi> results,
   }) = _PokemonResponse;
 
   factory PokemonResponse.fromJson(Map<String, dynamic> json) =>
@@ -17,12 +17,12 @@ class PokemonResponse with _$PokemonResponse {
 }
 
 @freezed
-class Pokemon with _$Pokemon {
-  factory Pokemon({
+class PokemonApi with _$PokemonApi {
+  factory PokemonApi({
     required String name,
     required String url,
-  }) = _Pokemon;
+  }) = _PokemonApi;
 
-  factory Pokemon.fromJson(Map<String, dynamic> json) =>
-      _$PokemonFromJson(json);
+  factory PokemonApi.fromJson(Map<String, dynamic> json) =>
+      _$PokemonApiFromJson(json);
 }

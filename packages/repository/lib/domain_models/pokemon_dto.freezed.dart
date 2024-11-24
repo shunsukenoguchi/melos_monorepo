@@ -3,7 +3,7 @@
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
-part of 'pokemon_response.dart';
+part of 'pokemon_dto.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -14,48 +14,47 @@ T _$identity<T>(T value) => value;
 final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
-PokemonResponse _$PokemonResponseFromJson(Map<String, dynamic> json) {
-  return _PokemonResponse.fromJson(json);
+PokemonDto _$PokemonDtoFromJson(Map<String, dynamic> json) {
+  return _PokemonDto.fromJson(json);
 }
 
 /// @nodoc
-mixin _$PokemonResponse {
+mixin _$PokemonDto {
   int get count => throw _privateConstructorUsedError;
   String? get next => throw _privateConstructorUsedError;
   String? get previous => throw _privateConstructorUsedError;
-  List<PokemonApi> get results => throw _privateConstructorUsedError;
+  List<Pokemon> get results => throw _privateConstructorUsedError;
 
-  /// Serializes this PokemonResponse to a JSON map.
+  /// Serializes this PokemonDto to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
 
-  /// Create a copy of PokemonResponse
+  /// Create a copy of PokemonDto
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
-  $PokemonResponseCopyWith<PokemonResponse> get copyWith =>
+  $PokemonDtoCopyWith<PokemonDto> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $PokemonResponseCopyWith<$Res> {
-  factory $PokemonResponseCopyWith(
-          PokemonResponse value, $Res Function(PokemonResponse) then) =
-      _$PokemonResponseCopyWithImpl<$Res, PokemonResponse>;
+abstract class $PokemonDtoCopyWith<$Res> {
+  factory $PokemonDtoCopyWith(
+          PokemonDto value, $Res Function(PokemonDto) then) =
+      _$PokemonDtoCopyWithImpl<$Res, PokemonDto>;
   @useResult
-  $Res call(
-      {int count, String? next, String? previous, List<PokemonApi> results});
+  $Res call({int count, String? next, String? previous, List<Pokemon> results});
 }
 
 /// @nodoc
-class _$PokemonResponseCopyWithImpl<$Res, $Val extends PokemonResponse>
-    implements $PokemonResponseCopyWith<$Res> {
-  _$PokemonResponseCopyWithImpl(this._value, this._then);
+class _$PokemonDtoCopyWithImpl<$Res, $Val extends PokemonDto>
+    implements $PokemonDtoCopyWith<$Res> {
+  _$PokemonDtoCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of PokemonResponse
+  /// Create a copy of PokemonDto
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
@@ -81,32 +80,31 @@ class _$PokemonResponseCopyWithImpl<$Res, $Val extends PokemonResponse>
       results: null == results
           ? _value.results
           : results // ignore: cast_nullable_to_non_nullable
-              as List<PokemonApi>,
+              as List<Pokemon>,
     ) as $Val);
   }
 }
 
 /// @nodoc
-abstract class _$$PokemonResponseImplCopyWith<$Res>
-    implements $PokemonResponseCopyWith<$Res> {
-  factory _$$PokemonResponseImplCopyWith(_$PokemonResponseImpl value,
-          $Res Function(_$PokemonResponseImpl) then) =
-      __$$PokemonResponseImplCopyWithImpl<$Res>;
+abstract class _$$PokemonDtoImplCopyWith<$Res>
+    implements $PokemonDtoCopyWith<$Res> {
+  factory _$$PokemonDtoImplCopyWith(
+          _$PokemonDtoImpl value, $Res Function(_$PokemonDtoImpl) then) =
+      __$$PokemonDtoImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call(
-      {int count, String? next, String? previous, List<PokemonApi> results});
+  $Res call({int count, String? next, String? previous, List<Pokemon> results});
 }
 
 /// @nodoc
-class __$$PokemonResponseImplCopyWithImpl<$Res>
-    extends _$PokemonResponseCopyWithImpl<$Res, _$PokemonResponseImpl>
-    implements _$$PokemonResponseImplCopyWith<$Res> {
-  __$$PokemonResponseImplCopyWithImpl(
-      _$PokemonResponseImpl _value, $Res Function(_$PokemonResponseImpl) _then)
+class __$$PokemonDtoImplCopyWithImpl<$Res>
+    extends _$PokemonDtoCopyWithImpl<$Res, _$PokemonDtoImpl>
+    implements _$$PokemonDtoImplCopyWith<$Res> {
+  __$$PokemonDtoImplCopyWithImpl(
+      _$PokemonDtoImpl _value, $Res Function(_$PokemonDtoImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of PokemonResponse
+  /// Create a copy of PokemonDto
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
@@ -116,7 +114,7 @@ class __$$PokemonResponseImplCopyWithImpl<$Res>
     Object? previous = freezed,
     Object? results = null,
   }) {
-    return _then(_$PokemonResponseImpl(
+    return _then(_$PokemonDtoImpl(
       count: null == count
           ? _value.count
           : count // ignore: cast_nullable_to_non_nullable
@@ -132,23 +130,23 @@ class __$$PokemonResponseImplCopyWithImpl<$Res>
       results: null == results
           ? _value._results
           : results // ignore: cast_nullable_to_non_nullable
-              as List<PokemonApi>,
+              as List<Pokemon>,
     ));
   }
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$PokemonResponseImpl implements _PokemonResponse {
-  _$PokemonResponseImpl(
+class _$PokemonDtoImpl implements _PokemonDto {
+  _$PokemonDtoImpl(
       {required this.count,
       this.next,
       this.previous,
-      required final List<PokemonApi> results})
+      required final List<Pokemon> results})
       : _results = results;
 
-  factory _$PokemonResponseImpl.fromJson(Map<String, dynamic> json) =>
-      _$$PokemonResponseImplFromJson(json);
+  factory _$PokemonDtoImpl.fromJson(Map<String, dynamic> json) =>
+      _$$PokemonDtoImplFromJson(json);
 
   @override
   final int count;
@@ -156,9 +154,9 @@ class _$PokemonResponseImpl implements _PokemonResponse {
   final String? next;
   @override
   final String? previous;
-  final List<PokemonApi> _results;
+  final List<Pokemon> _results;
   @override
-  List<PokemonApi> get results {
+  List<Pokemon> get results {
     if (_results is EqualUnmodifiableListView) return _results;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_results);
@@ -166,14 +164,14 @@ class _$PokemonResponseImpl implements _PokemonResponse {
 
   @override
   String toString() {
-    return 'PokemonResponse(count: $count, next: $next, previous: $previous, results: $results)';
+    return 'PokemonDto(count: $count, next: $next, previous: $previous, results: $results)';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$PokemonResponseImpl &&
+            other is _$PokemonDtoImpl &&
             (identical(other.count, count) || other.count == count) &&
             (identical(other.next, next) || other.next == next) &&
             (identical(other.previous, previous) ||
@@ -186,32 +184,31 @@ class _$PokemonResponseImpl implements _PokemonResponse {
   int get hashCode => Object.hash(runtimeType, count, next, previous,
       const DeepCollectionEquality().hash(_results));
 
-  /// Create a copy of PokemonResponse
+  /// Create a copy of PokemonDto
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
-  _$$PokemonResponseImplCopyWith<_$PokemonResponseImpl> get copyWith =>
-      __$$PokemonResponseImplCopyWithImpl<_$PokemonResponseImpl>(
-          this, _$identity);
+  _$$PokemonDtoImplCopyWith<_$PokemonDtoImpl> get copyWith =>
+      __$$PokemonDtoImplCopyWithImpl<_$PokemonDtoImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$PokemonResponseImplToJson(
+    return _$$PokemonDtoImplToJson(
       this,
     );
   }
 }
 
-abstract class _PokemonResponse implements PokemonResponse {
-  factory _PokemonResponse(
+abstract class _PokemonDto implements PokemonDto {
+  factory _PokemonDto(
       {required final int count,
       final String? next,
       final String? previous,
-      required final List<PokemonApi> results}) = _$PokemonResponseImpl;
+      required final List<Pokemon> results}) = _$PokemonDtoImpl;
 
-  factory _PokemonResponse.fromJson(Map<String, dynamic> json) =
-      _$PokemonResponseImpl.fromJson;
+  factory _PokemonDto.fromJson(Map<String, dynamic> json) =
+      _$PokemonDtoImpl.fromJson;
 
   @override
   int get count;
@@ -220,55 +217,53 @@ abstract class _PokemonResponse implements PokemonResponse {
   @override
   String? get previous;
   @override
-  List<PokemonApi> get results;
+  List<Pokemon> get results;
 
-  /// Create a copy of PokemonResponse
+  /// Create a copy of PokemonDto
   /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$PokemonResponseImplCopyWith<_$PokemonResponseImpl> get copyWith =>
+  _$$PokemonDtoImplCopyWith<_$PokemonDtoImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
-PokemonApi _$PokemonApiFromJson(Map<String, dynamic> json) {
-  return _PokemonApi.fromJson(json);
+Pokemon _$PokemonFromJson(Map<String, dynamic> json) {
+  return _Pokemon.fromJson(json);
 }
 
 /// @nodoc
-mixin _$PokemonApi {
+mixin _$Pokemon {
   String get name => throw _privateConstructorUsedError;
   String get url => throw _privateConstructorUsedError;
 
-  /// Serializes this PokemonApi to a JSON map.
+  /// Serializes this Pokemon to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
 
-  /// Create a copy of PokemonApi
+  /// Create a copy of Pokemon
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
-  $PokemonApiCopyWith<PokemonApi> get copyWith =>
-      throw _privateConstructorUsedError;
+  $PokemonCopyWith<Pokemon> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $PokemonApiCopyWith<$Res> {
-  factory $PokemonApiCopyWith(
-          PokemonApi value, $Res Function(PokemonApi) then) =
-      _$PokemonApiCopyWithImpl<$Res, PokemonApi>;
+abstract class $PokemonCopyWith<$Res> {
+  factory $PokemonCopyWith(Pokemon value, $Res Function(Pokemon) then) =
+      _$PokemonCopyWithImpl<$Res, Pokemon>;
   @useResult
   $Res call({String name, String url});
 }
 
 /// @nodoc
-class _$PokemonApiCopyWithImpl<$Res, $Val extends PokemonApi>
-    implements $PokemonApiCopyWith<$Res> {
-  _$PokemonApiCopyWithImpl(this._value, this._then);
+class _$PokemonCopyWithImpl<$Res, $Val extends Pokemon>
+    implements $PokemonCopyWith<$Res> {
+  _$PokemonCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of PokemonApi
+  /// Create a copy of Pokemon
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
@@ -290,25 +285,24 @@ class _$PokemonApiCopyWithImpl<$Res, $Val extends PokemonApi>
 }
 
 /// @nodoc
-abstract class _$$PokemonApiImplCopyWith<$Res>
-    implements $PokemonApiCopyWith<$Res> {
-  factory _$$PokemonApiImplCopyWith(
-          _$PokemonApiImpl value, $Res Function(_$PokemonApiImpl) then) =
-      __$$PokemonApiImplCopyWithImpl<$Res>;
+abstract class _$$PokemonImplCopyWith<$Res> implements $PokemonCopyWith<$Res> {
+  factory _$$PokemonImplCopyWith(
+          _$PokemonImpl value, $Res Function(_$PokemonImpl) then) =
+      __$$PokemonImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String name, String url});
 }
 
 /// @nodoc
-class __$$PokemonApiImplCopyWithImpl<$Res>
-    extends _$PokemonApiCopyWithImpl<$Res, _$PokemonApiImpl>
-    implements _$$PokemonApiImplCopyWith<$Res> {
-  __$$PokemonApiImplCopyWithImpl(
-      _$PokemonApiImpl _value, $Res Function(_$PokemonApiImpl) _then)
+class __$$PokemonImplCopyWithImpl<$Res>
+    extends _$PokemonCopyWithImpl<$Res, _$PokemonImpl>
+    implements _$$PokemonImplCopyWith<$Res> {
+  __$$PokemonImplCopyWithImpl(
+      _$PokemonImpl _value, $Res Function(_$PokemonImpl) _then)
       : super(_value, _then);
 
-  /// Create a copy of PokemonApi
+  /// Create a copy of Pokemon
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
@@ -316,7 +310,7 @@ class __$$PokemonApiImplCopyWithImpl<$Res>
     Object? name = null,
     Object? url = null,
   }) {
-    return _then(_$PokemonApiImpl(
+    return _then(_$PokemonImpl(
       name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
@@ -331,11 +325,11 @@ class __$$PokemonApiImplCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$PokemonApiImpl implements _PokemonApi {
-  _$PokemonApiImpl({required this.name, required this.url});
+class _$PokemonImpl implements _Pokemon {
+  _$PokemonImpl({required this.name, required this.url});
 
-  factory _$PokemonApiImpl.fromJson(Map<String, dynamic> json) =>
-      _$$PokemonApiImplFromJson(json);
+  factory _$PokemonImpl.fromJson(Map<String, dynamic> json) =>
+      _$$PokemonImplFromJson(json);
 
   @override
   final String name;
@@ -344,14 +338,14 @@ class _$PokemonApiImpl implements _PokemonApi {
 
   @override
   String toString() {
-    return 'PokemonApi(name: $name, url: $url)';
+    return 'Pokemon(name: $name, url: $url)';
   }
 
   @override
   bool operator ==(Object other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$PokemonApiImpl &&
+            other is _$PokemonImpl &&
             (identical(other.name, name) || other.name == name) &&
             (identical(other.url, url) || other.url == url));
   }
@@ -360,38 +354,37 @@ class _$PokemonApiImpl implements _PokemonApi {
   @override
   int get hashCode => Object.hash(runtimeType, name, url);
 
-  /// Create a copy of PokemonApi
+  /// Create a copy of Pokemon
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
-  _$$PokemonApiImplCopyWith<_$PokemonApiImpl> get copyWith =>
-      __$$PokemonApiImplCopyWithImpl<_$PokemonApiImpl>(this, _$identity);
+  _$$PokemonImplCopyWith<_$PokemonImpl> get copyWith =>
+      __$$PokemonImplCopyWithImpl<_$PokemonImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$PokemonApiImplToJson(
+    return _$$PokemonImplToJson(
       this,
     );
   }
 }
 
-abstract class _PokemonApi implements PokemonApi {
-  factory _PokemonApi({required final String name, required final String url}) =
-      _$PokemonApiImpl;
+abstract class _Pokemon implements Pokemon {
+  factory _Pokemon({required final String name, required final String url}) =
+      _$PokemonImpl;
 
-  factory _PokemonApi.fromJson(Map<String, dynamic> json) =
-      _$PokemonApiImpl.fromJson;
+  factory _Pokemon.fromJson(Map<String, dynamic> json) = _$PokemonImpl.fromJson;
 
   @override
   String get name;
   @override
   String get url;
 
-  /// Create a copy of PokemonApi
+  /// Create a copy of Pokemon
   /// with the given fields replaced by the non-null parameter values.
   @override
   @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$PokemonApiImplCopyWith<_$PokemonApiImpl> get copyWith =>
+  _$$PokemonImplCopyWith<_$PokemonImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
