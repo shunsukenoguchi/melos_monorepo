@@ -7,3 +7,10 @@ packages:
 scripts:
   analyze:
     exec: dart analyze .
+
+  build_runner:
+    run: dart run build_runner build -d
+    exec:
+      orderDependents: true
+    packageFilters:
+      dependsOn: build_runner
