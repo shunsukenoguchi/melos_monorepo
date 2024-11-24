@@ -260,10 +260,10 @@
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2024-11-24T06:11:36.669812Z",
+  "generated": "2024-11-24T06:13:59.096592Z",
   "generator": "pub",
   "generatorVersion": "3.5.4",
-  "flutterRoot": "file:///Users/noguchishunsuke/development/flutter",
+  "flutterRoot": "file:///Users/noguchishunsuke/fvm/versions/3.24.5",
   "flutterVersion": "3.24.5",
   "pubCache": "file:///Users/noguchishunsuke/.pub-cache"
 }
