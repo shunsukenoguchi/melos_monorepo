@@ -254,16 +254,16 @@
       "languageVersion": "3.0"
     },
     {
-      "name": "melos_repostiory_sample5",
+      "name": "melos_repostiory_sample5_workspace",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2024-11-24T06:13:59.096592Z",
+  "generated": "2024-11-24T06:36:44.708539Z",
   "generator": "pub",
   "generatorVersion": "3.5.4",
-  "flutterRoot": "file:///Users/noguchishunsuke/fvm/versions/3.24.5",
+  "flutterRoot": "file:///Users/noguchishunsuke/development/flutter",
   "flutterVersion": "3.24.5",
   "pubCache": "file:///Users/noguchishunsuke/.pub-cache"
 }

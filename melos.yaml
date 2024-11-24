@@ -1,7 +1,7 @@
 name: melos_repostiory_sample5
 
 packages:
-  - apps/**
+  - apps/*
   - packages/**
 
 scripts:

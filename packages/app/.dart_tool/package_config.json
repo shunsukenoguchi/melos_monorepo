@@ -164,13 +164,13 @@
       "languageVersion": "3.3"
     },
     {
-      "name": "base_ui",
+      "name": "app",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2024-11-24T06:36:46.330056Z",
+  "generated": "2024-11-24T06:36:46.487256Z",
   "generator": "pub",
   "generatorVersion": "3.5.4",
   "flutterRoot": "file:///Users/noguchishunsuke/development/flutter",
