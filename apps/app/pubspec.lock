@@ -16,6 +16,13 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.11.0"
+  base_ui:
+    dependency: "direct overridden"
+    description:
+      path: "../../packages/base_ui"
+      relative: true
+    source: path
+    version: "0.0.0"
   boolean_selector:
     dependency: transitive
     description:

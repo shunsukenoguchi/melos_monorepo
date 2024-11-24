@@ -8,6 +8,12 @@
       "languageVersion": "2.18"
     },
     {
+      "name": "base_ui",
+      "rootUri": "../../base_ui",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
       "name": "boolean_selector",
       "rootUri": "file:///Users/noguchishunsuke/.pub-cache/hosted/pub.dev/boolean_selector-2.1.1",
       "packageUri": "lib/",
@@ -194,7 +200,7 @@
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2024-11-24T09:58:31.726063Z",
+  "generated": "2024-11-24T10:52:52.019465Z",
   "generator": "pub",
   "generatorVersion": "3.5.4",
   "flutterRoot": "file:///Users/noguchishunsuke/development/flutter",

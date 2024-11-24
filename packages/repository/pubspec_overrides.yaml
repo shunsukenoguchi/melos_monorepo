@@ -1,0 +1,4 @@
+# melos_managed_dependency_overrides: service
+dependency_overrides:
+  service:
+    path: ../service
